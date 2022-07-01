@@ -12,9 +12,7 @@ Regex or regular expression is a sequence of characters that defines a specific 
 - [Grouping Constructs](#grouping-constructs)
 - [Bracket Expressions](#bracket-expressions)
 - [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
-- [Flags](#flags)
-- [Character Escapes](#character-escapes)
+- [Greedy and Lazy Match](#greedy-lazy-match)
 
 ## Regex Components
 This is the regex component:  /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
@@ -31,15 +29,22 @@ Quantifiers, group or connect the user + email + .com.
 {2,6}, is a range that of 2-6 characters from the character set [a-z\.]
 
 ### Bracket Expressions
+Bracket expression is used to match letter sets through a-z and is also case sensitive. It also matches the character-digit 0-9, and also literal dot and hyphen. 
+
+‹[A-Z0-9.-]› and other sequences between brackets are character classes
 
 ### Character Classes
+\d is the character class.
 
-### The OR Operator
+ It matches single character-digits from 0-9. It only matches single digits not double digits. 
 
-### Flags
+### Greedy and Lazy Match 
+Greedy: i.e. '+)@('
+Lazy: ? , * , {}
 
-### Character Escapes
+Regex's purpose is to return a match, which will report the first possible match. Since this regular expression includes + quantifieer, it will match as few times as needed. 
+
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This gist was created by Novia on @supanov GitHub profile. https://gist.github.com/supanov
