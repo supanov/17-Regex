@@ -1,10 +1,9 @@
-# Title (replace with your title)
+# Regex - Matching an Email 
 
-Introductory paragraph (replace this with your text)
+This tutorial will provide an explanation of the components of regex for matching an email. 
 
-## Summary
+Regex or regular expression is a sequence of characters that defines a specific search pattern used to identify an email address. This is useful in technologies such as Node or MongoDB
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
 ## Table of Contents
 
@@ -18,12 +17,18 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
+This is the regex component:  /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ### Anchors
+Anchors are used to indicate the beginning of the sting and ending the of the string. 
+
+ ^ - this anchor is the beginning of an empty string
+ $ - this anchor signals an end to a string
 
 ### Quantifiers
+Quantifiers, group or connect the user + email + .com. 
 
-### Grouping Constructs
+{2,6}, is a range that of 2-6 characters from the character set [a-z\.]
 
 ### Bracket Expressions
 
